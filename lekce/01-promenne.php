@@ -41,3 +41,21 @@ echo 'Typ $jeStudent: ' . gettype($jeStudent) . "\n";
 echo "\n--- Tvůj úkol ---\n";
 // TODO: Vytvoř proměnné pro svého oblíbeného hrdinu (jméno, síla, zdraví)
 //       a vypiš je na obrazovku
+
+
+$heroname = 'izam';
+$phy = 88;
+$pac = 46;
+$pas = 83;
+$def = 92;
+$sho = 65;
+$dri = 82;
+
+echo "Hrdina: {$heroname}\n";
+echo "Physicality: {$phy}\n";
+echo "Pace: {$pac}\n";
+echo "Passing: {$pas}\n";
+echo "Defending: {$def}\n";
+echo "Shooting: {$sho}\n";
+echo "Dribbling: {$dri}\n";
+echo "stats:" . (($phy + $pac + $pas + $def + $sho + $dri) /5) . "\n";
