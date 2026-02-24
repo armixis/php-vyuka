@@ -76,4 +76,17 @@ echo 'Sudá: ' . implode(', ', $suda) . "\n";
 
 echo "\n--- Tvůj úkol ---\n";
 // TODO: Vytvoř pole svých 5 oblíbených filmů a vypiš je s pořadím
+echo "Moje oblíbené filmy:\n";
+$filmy = ['Vykoupení z věznice Shawshank', 'Jessie', 'Batman', 'Asterix a Obelix', 'Phinias a Ferb'];
+
+foreach ($filmy as $index => $film) {
+    $poradi = $index + 1;
+    echo "{$poradi}. {$film}\n";
+}
 // TODO: Použij array_filter k vyfiltrování filmů začínajících na určité písmeno
+echo "\nFilmy začínající na 'B':\n";
+$filmyNaB = array_filter($filmy, function($film) {
+    return str_starts_with($film, 'B');
+});
+
+echo implode(', ', $filmyNaB) . "\n";

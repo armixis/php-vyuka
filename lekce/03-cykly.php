@@ -64,4 +64,18 @@ echo "\n";
 
 echo "\n--- Tvůj úkol ---\n";
 // TODO: Vypiš čísla od 10 do 1 (odpočítávání)
+
+echo"\ncisla 1 az 10:\n";
+for ($i = 10; $i >= 1; $i--) {
+    echo "{$i} ";
+}
+echo "\n";
+
 // TODO: Vypiš malou násobilku čísla 7 (7x1=7, 7x2=14, ...)
+
+echo"\nnasovilka 7:\n";
+$cislo = 7;
+for ($i = 1; $i <= 10; $i++) {
+    $vysledek = $cislo * $i;
+    echo "{$cislo} x {$i} = {$vysledek}\n";
+}
